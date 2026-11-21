@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f6fb">
+  <meta name="description" content="Registra ore di lavoro, trasferte e assenze. Prepara il tuo foglio mensile in PDF o Excel.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; worker-src 'self'">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="AT Service">
+  <title>AT SYSTEM SERVICE · Registro ore</title>
+  <link rel="icon" href="./assets/icon-192.png?v=10">
+  <link rel="apple-touch-icon" href="./assets/icon-180.png?v=10">
+  <link rel="manifest" href="./manifest.webmanifest?v=10">
+  <link rel="stylesheet" href="./styles.css?v=13">
+  <script src="./app.mjs?v=13" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#content">Vai al contenuto</a>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="#home" aria-label="AT SYSTEM SERVICE, Home">
+        <img src="./assets/at-spline.webp" width="42" height="42" alt="">
+        <strong>AT SYSTEM SERVICE</strong>
+      </a>
+      <nav id="navigation" aria-label="Menu principale"></nav>
+      <div class="rail-foot" id="rail-profile"></div>
+    </aside>
+    <div class="workspace">
+      <header class="header">
+        <a class="brand mobile-brand" href="#home" aria-label="AT SYSTEM SERVICE, Home">
+          <img src="./assets/at-spline.webp" width="37" height="37" alt="">
+          <strong>AT SYSTEM SERVICE</strong>
+        </a>
+        <span class="header-location" id="header-location">Panoramica</span>
+        <span class="save-status" id="save-status" role="status" aria-live="polite">Apertura…</span>
+      </header>
+      <div id="storage-banner" class="storage-banner" hidden></div>
+      <main id="content" tabindex="-1"><p class="loading">Apertura del registro…</p></main>
+    </div>
+  </div>
+  <dialog id="editor" aria-labelledby="editor-title"></dialog>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>Attiva JavaScript in Safari per compilare il registro e salvare i dati sul dispositivo.</noscript>
+</body>
+</html>
